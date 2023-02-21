@@ -636,6 +636,11 @@ header.sticky {
 		background: none;
 		height: 84vh;
 	}
+	.home-img{
+
+		display: none;
+
+	}
 
 	.home-shel {
 
@@ -662,6 +667,11 @@ header.sticky {
 		align-items: center;
 		padding: 170px 30px;
 		transition: all .40s ease;
+	}
+	.home-img{
+
+		display: none;
+
 	}
 
 	.navbar a {
@@ -699,8 +709,8 @@ header.sticky {
 	}
 
 	.home-img {
-		margin-top: -500px;
-		text-align: center;
+		display: none;
+		/* text-align: center; */
 	}
 
 	.home-img img {
@@ -724,7 +734,7 @@ header.sticky {
 
 	.home-img {
 
-		margin-top: -500px;
+		display: none;
 
 	}
 
