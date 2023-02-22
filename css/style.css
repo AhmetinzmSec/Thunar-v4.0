@@ -119,12 +119,6 @@ header {
 
 }
 
-.shel {
-
-	height: auto;
-
-}
-
 .shelter h2,
 .shel h2 {
 
@@ -649,12 +643,6 @@ header.sticky {
 
 	}
 
-	.shel{
-
-		height: auto;
-
-	}
-
 	.home-shel {
 
 		height: auto;
@@ -687,7 +675,7 @@ header.sticky {
 
 	}
 
-	.shel{
+	.home-shel {
 
 		height: auto;
 
@@ -738,12 +726,6 @@ header.sticky {
 		width: 100%;
 	}
 
-	.shel{
-
-		height: auto;
-
-	}
-
 	.about {
 		grid-template-columns: 1fr;
 		gap: 1rem;
@@ -763,14 +745,8 @@ header.sticky {
 
 	}
 
-	.shel{
-
-		height: auto;
-
-	}
-
 	.home {
 		background: none;
-		height: 120vh;
+		height: auto;
 	}
 }
