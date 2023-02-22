@@ -649,6 +649,12 @@ header.sticky {
 
 	}
 
+	.shel{
+
+		height: auto;
+
+	}
+
 	.home-shel {
 
 		height: auto;
@@ -678,6 +684,12 @@ header.sticky {
 	.home-img{
 
 		display: none;
+
+	}
+
+	.shel{
+
+		height: auto;
 
 	}
 
@@ -726,6 +738,12 @@ header.sticky {
 		width: 100%;
 	}
 
+	.shel{
+
+		height: auto;
+
+	}
+
 	.about {
 		grid-template-columns: 1fr;
 		gap: 1rem;
@@ -742,6 +760,12 @@ header.sticky {
 	.home-img {
 
 		display: none;
+
+	}
+
+	.shel{
+
+		height: auto;
 
 	}
 
