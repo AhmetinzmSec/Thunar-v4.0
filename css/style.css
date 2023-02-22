@@ -509,7 +509,7 @@ header.sticky {
 }
 
 .about {
-	/* background: url(../img/aboutbg.png); */
+	/* background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("https://i.hizliresim.com/2og4wvn.gif") no-repeat; */
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -549,7 +549,7 @@ header.sticky {
 
 .contact {
 	padding: 60px 13%;
-	background: var(--bg-color);
+	background: url(../img/footer.png);
 }
 
 .main-contact {
@@ -620,6 +620,8 @@ header.sticky {
 
 	.contact {
 		padding: 60px 3%;
+		background: var(--bg-color);
+		box-shadow: 0px 0px 5px 5px var(--defcont);
 		transition: .2s;
 	}
 
