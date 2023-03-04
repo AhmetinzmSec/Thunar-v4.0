@@ -10,6 +10,7 @@
 
 :root {
 	--defborder: #343638;
+	--yakinda: #838181;
 	--defcont: #16171a;
 	--bg-color: #0c0d10;
 	--text-color: #fff;
@@ -336,6 +337,12 @@ header {
 	color: var(--text-color);
 	transition: all .40s ease;
 	margin-right: 15px;
+}
+
+.header-icons .ssshh i{
+
+	color: var(--yakinda);
+
 }
 
 .header-icons i:hover {
