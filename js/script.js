@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 
-alert("Yepyeni projemiz Batty, yakında ilk gösterim ile karşınızda")
+alert("Yepyeni masaüstü programımız Rıhtım yayında!")
 
 window.addEventListener ("scroll", function() {
 	header.classList.toggle ("sticky", window.scrollY > 0);
