@@ -9,13 +9,13 @@
 }
 
 :root {
-	--defborder: rgba(28, 27, 27, 0.07);
+	--defborder: rgba(28, 28, 28, 0.071);
 	--yakinda: #838181;
 	--defcont: rgba(12, 13, 16, 0);
 	--bg-color: #0c0d10;
 	--text-color: #fff;
 	--second-color: #fff;
-	--main-color: rgba(186, 36, 101);
+	--main-color: #008000;
 	--blussem: #ffc0cb;
 	--big-font: 3.8rem;
 	--h2-font: 2.6rem;
@@ -442,7 +442,7 @@ section {
 
 .latter form {
 	width: 100%;
-	max-width: 460px;
+	max-width: 370px;
 	position: relative;
 }
 
