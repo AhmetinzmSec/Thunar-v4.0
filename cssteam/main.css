@@ -1,0 +1,73 @@
+/* Layout Styling */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("https://i.hizliresim.com/2og4wvn.gif") no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  background-attachment: fixed;
+}
+
+.text{
+
+  margin-bottom: 30px;
+
+}
+
+.container {
+  max-width: 60em !important;
+}
+
+.footer {
+  background: rgba(26, 26, 26, 0.75) !important;
+  padding: 2em !important;
+}
+
+/* Image Styling */
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px #222 solid;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.staff {
+  border-radius: 100%;
+  display: inline-block;
+  max-width: 10em;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/* Text Styling */
+
+h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+h2 {
+
+  margin: 20px;
+
+}
+
+p {
+  color: #fff;
+}
+
+.linky {
+  color: #fff !important;
+}
