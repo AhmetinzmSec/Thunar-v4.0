@@ -1,3 +1,16 @@
+window.onload = function () {
+    document.getElementById('plan').style.display = "block";
+    document.getElementById('popup').style.display = "block";
+};
+//belirli butona tıklandığında gerçekleşicek olaylar
+function popupbtn() {
+    document.getElementById('plan').style.display = "none";
+    document.getElementById('popup').style.display = "none";
+}
+
+var myIndex = 0;
+carousel();
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,

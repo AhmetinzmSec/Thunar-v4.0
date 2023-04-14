@@ -1,0 +1,1 @@
+alert("Giriş Sistemine Katkılarından Dolayı Yasin Öztarakçı'ya Teşekkür Ederiz");

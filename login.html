@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,68 +19,167 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
     <!--Stylesheet-->
 
 </head>
+
 <body>
 
 
 
-<div class="home">
+    <div class="home">
 
-    <!---start header---->
-    <header>
-        <a href="#" class="logo">
-            <img src="img/ThunarLogoNoBG.png">
-        </a>
+        <!---start header---->
+        <header>
+            <a href="#" class="logo">
+                <img src="img/ThunarLogoNoBG.png">
+            </a>
 
-        <ul class="navbar">
-            <li><a href="index.html#home">Ana Sayfa</a></li>
-            <!-- <li><a href="#courses">Diğer Projeler</a></li> -->
-            <li><a href="index.html#about">Hakkında</a></li>
-            <li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
-            <li><a href="shelter.html">Sığınak</a></li>
-            <li><a href="dock.html">Rıhtım <span class="yakinda">YENİ</span></a></li>
-            <!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
-        </ul>
+            <ul class="navbar">
+                <li><a href="index.html#home">Ana Sayfa</a></li>
+                <!-- <li><a href="#courses">Diğer Projeler</a></li> -->
+                <li><a href="index.html#about">Hakkında</a></li>
+                <li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
+                <li><a href="shelter.html">Sığınak</a></li>
+                <li><a href="dock.html">Rıhtım <span class="yakinda">YENİ</span></a></li>
+                <!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
+            </ul>
 
-        <div class="header-icons">
-            <a href="https://top.gg/tr/bot/963406060150984764" target="_blank"><i class='bx bx-heart'></i></a>
-            <a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
-               target="_blank"><i class='bx bx-plus'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="header-icons">
+                <a href="https://top.gg/tr/bot/963406060150984764" target="_blank"><i class='bx bx-heart'></i></a>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
+                    target="_blank"><i class='bx bx-plus'></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
         </div>
-    </header>
+        <form class="login">
+            <h3>Giriş Yapın</h3>
 
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
+            <label for="">E-Posta</label>
+            <input type="email" placeholder="Mail Adresiniz" id="email" name="email">
+
+            <label for="">Şifre</label>
+            <input type="password" placeholder="Şifreniz" id="password" name="password">
+
+            <!-- <input type="submit" id="login" name="login" value="Gönder"> -->
+            <button type="button" id="giris" name="giris">Giriş Yap</button>
+            <button type="button" id="kayit" name="kayit">Kayıt Ol</button>
+        </form>
+
+
     </div>
-    <form class="login">
-        <h3>Giriş Yapın</h3>
 
-        <label for="username">E-Posta</label>
-        <input type="email" placeholder="Mail Adresiniz" id="username">
+    <!---custom js link---->
 
-        <label for="password">Şifre</label>
-        <input type="password" placeholder="Şifreniz" id="password">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 
-        <button disabled style="cursor: no-drop">Giriş Yap</button>
-        <button disabled style="cursor: no-drop">Kayıt Ol</button>
-    </form>
 
-</div>
+    <!-- Firebase database  -->
+    <script type="module">
+        //fonksiyon,sdk,kütüphane
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
-<!---custom js link---->
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
-<script src="https://kit.fontawesome.com/a81368914c.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBN6iNFW3cVk5d2DlLPMUQevVNO7Yfg6cY",
+            authDomain: "thunar-kapgan-7e314.firebaseapp.com",
+            projectId: "thunar-kapgan-7e314",
+            storageBucket: "thunar-kapgan-7e314.appspot.com",
+            messagingSenderId: "79408902528",
+            appId: "1:79408902528:web:a4784bfe8f36a811319165"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+
+
+
+
+        //Eposta şifre ile hesap oluştur
+
+        document.getElementById("kayit").addEventListener("click", function () {
+            //değerleri al
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+           //kayıt
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // kayıt başarılı olduğunda yapılacak işlemler
+                    const user = userCredential.user;
+                    alert("Kayıt Başarılı");
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    if (email==""){
+                        alert("Lütfen Geçerli Bir E-Posta Adresi Girin");
+                    }
+                    else if(password==""){
+                        alert("Lütfen  Geçerli Bir Parola Girin ");
+                    }
+
+                    else{
+                        alert("Bu E-Posta Adresi Kullanılıyor");
+                    }
+
+                });
+        });
+
+        //eposta şife ile giriş yap
+
+
+        document.getElementById("giris").addEventListener("click", function () {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            // var username=document.getElementById("username").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    window.location.href = "/index.html";
+
+
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    if (email=="") {
+                        alert("Lütfen Geçerli Bir E-Posta Adresi Girin");
+                    }
+                    else if(password==""){
+                        alert("Lütfen Parolanızı Girin");
+                    }
+
+                    else{
+                        alert("E-Postanız Veya Parolanız Hatalı")
+                    }
+                });
+        });
+
+    </script>
 
 </body>
+
 </html>

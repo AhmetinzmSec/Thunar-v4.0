@@ -470,7 +470,7 @@ body {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 99%;
   top: 0;
   right: 0;
   z-index: 1000;
@@ -696,6 +696,7 @@ section {
 }
 
 .latter form {
+  color: var(--text-color);
   width: 100%;
   max-width: 370px;
   position: relative;
@@ -731,6 +732,11 @@ section {
 }
 
 header.sticky {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1px solid var(--defborder);
+  border-radius: 5px;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--defborder);
   padding: 12px 13%;
@@ -793,7 +799,7 @@ header.sticky {
 .blur {
   border: 1px solid var(--defborder);
   border-radius: 10px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   padding: 5%;
 }
 
@@ -984,6 +990,12 @@ header.sticky {
   align-items: center;
 }
 
+.hoem{
+
+  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("https://i.hizliresim.com/2og4wvn.gif") no-repeat; 
+
+}
+
 .about-img img {
   width: 100%;
   height: auto;
@@ -1048,6 +1060,13 @@ header.sticky {
 }
 
 .last-text p {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1px solid var(--defborder);
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
   text-align: center;
   padding: 18px;
   color: var(--second-color);
@@ -1188,14 +1207,17 @@ header.sticky {
   }
 
   header.sticky {
+    background-color: var(--bg-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 0px;
     padding: 12px 3%;
     transition: 0.2s;
   }
 
-  .blur-text{
-
+  .blur-text {
     display: none;
-
   }
 
   section {
