@@ -1250,7 +1250,7 @@ header.sticky {
   }
 
   .home-img {
-    display: none;
+    width: 300px;
   }
 
   .home-shel {
@@ -1278,7 +1278,7 @@ header.sticky {
   }
 
   .home-img {
-    display: none;
+    width: 300px;
   }
 
   .home-shel {
@@ -1317,7 +1317,7 @@ header.sticky {
   }
 
   .home-img {
-    display: none;
+    width: 300px;
     /* text-align: center; */
   }
 
@@ -1339,7 +1339,7 @@ header.sticky {
   }
 
   .home-img {
-    display: none;
+    width: 300px;
   }
 
   .home {
