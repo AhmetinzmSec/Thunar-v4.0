@@ -10,6 +10,7 @@
 
     <!---custom css link---->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -29,8 +30,10 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
+
+<section>
 
 
     <div class="home">
@@ -42,43 +45,52 @@
             </a>
 
             <ul class="navbar">
-                <li><a href="index.html#home">Ana Sayfa</a></li>
-                <!-- <li><a href="#courses">Diğer Projeler</a></li> -->
-                <li><a href="index.html#about">Hakkında</a></li>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#categories">Özellikler</a></li>
+                <li><a href="#courses">Diğer Projeler</a></li>
+                <li><a href="#about">Hakkında</a></li>
                 <li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
-                <li><a href="shelter.html">Sığınak</a></li>
-                <li><a href="dock.html">Rıhtım <span class="yakinda">YENİ</span></a></li>
+                <li><a href="https://siberguvenlikexe.com">Siber Güvenlik EXE <span class="yakinda">BETA</span></a></li>
                 <!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
             </ul>
-
+    
             <div class="header-icons">
                 <a href="https://top.gg/tr/bot/963406060150984764" target="_blank"><i class='bx bx-heart'></i></a>
                 <a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
                     target="_blank"><i class='bx bx-plus'></i></a>
+                <a href="index.html" target="_blank"><i class='bx bx-home'></i></a>
+                <!--<a href="" target="_blank" class="ssshh"><i class='bx bx-user'></i></a>-->
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
         </header>
 
-        <div class="background">
-            <div class="shape"></div>
-            <div class="shape"></div>
+        
+
+        <div class="lg">
+
+            <div class="background">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <form class="login">
+                <h3>Giriş Yapın</h3>
+    
+                <label for="">E-Posta</label>
+                <input type="email" placeholder="Mail Adresiniz" id="email" name="email">
+    
+                <label for="">Şifre</label>
+                <input type="password" placeholder="Şifreniz" id="password" name="password">
+    
+                <!-- <input type="submit" id="login" name="login" value="Gönder"> -->
+                <button type="button" id="giris" name="giris">Giriş Yap</button>
+                <button type="button" id="kayit" name="kayit">Kayıt Ol</button>
+            </form>
+    
         </div>
-        <form class="login">
-            <h3>Giriş Yapın</h3>
-
-            <label for="">E-Posta</label>
-            <input type="email" placeholder="Mail Adresiniz" id="email" name="email">
-
-            <label for="">Şifre</label>
-            <input type="password" placeholder="Şifreniz" id="password" name="password">
-
-            <!-- <input type="submit" id="login" name="login" value="Gönder"> -->
-            <button type="button" id="giris" name="giris">Giriş Yap</button>
-            <button type="button" id="kayit" name="kayit">Kayıt Ol</button>
-        </form>
-
 
     </div>
+
+</section>
 
     <!---custom js link---->
 
@@ -182,7 +194,12 @@
 
     <!---start contact section---->
 	<section class="contact" id="contact">
+
+        
+
 		<footer class="footer-distributed">
+
+            <h5 align="center" class="mtxt">Henüz mobilden giriş desteklenmiyor. Ancak mobil uyumluluk üzerinde çalışıyoruz. Çok yakında kullanılabilir olacak</h5>
 
 			<div class="footer-left">
 	

@@ -25,6 +25,14 @@
   --p-font: 1.1rem;
 }
 
+.mtxt{
+
+  color: red;
+ margin-bottom: 40px;
+  display: none;
+
+}
+
 #work {
   width: 300px;
   margin: 0 auto;
@@ -1111,7 +1119,7 @@ header.sticky {
 .login {
   height: 580px;
   width: 400px;
-  background-color: var(--defborder);
+  backdrop-filter: blur(20px);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -1202,6 +1210,20 @@ header.sticky {
 }
 
 @media (max-width: 1410px) {
+
+  .mtxt{
+
+    
+    display: block;
+
+  }
+
+  .lg{
+
+    display: none;
+
+  }
+
   header {
     padding: 10px 3%;
     transition: 0.2s;
@@ -1351,7 +1373,6 @@ footer{
 
   background: none;
   backdrop-filter: blur(20px);
-  margin-bottom: 30px;
 
 }
 
