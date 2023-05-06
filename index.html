@@ -4,12 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thunar - Geçmiş Olsun Türkiyem</title>
+	<title>Thunar - Discord Güvenliğinde Yeni Çağ</title>
 
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 
 	<!---custom css link---->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/loginpage.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -42,11 +44,10 @@
 			<li><a href="#about">Hakkında</a></li>
 			<li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
 			<li><a href="https://siberguvenlikexe.com">Siber Güvenlik EXE <span class="yakinda">BETA</span></a></li>
-			<!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
 		</ul>
 
 		<div class="header-icons">
-			<a href="https://top.gg/tr/bot/963406060150984764" target="_blank"><i class='bx bx-heart'></i></a>
+			<a href="" target="_blank" onclick="bg()"><i class='bx bx-heart'></i></a>
 			<a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
 				target="_blank"><i class='bx bx-plus'></i></a>
 			<a href="login.html" target="_blank"><i class='bx bx-user'></i></a><span class="yakinda">YENİ</span>
@@ -70,127 +71,6 @@
 		<div class="home-img">
 			<img src="img/logo.png">
 		</div>
-
-
-
-		<!-- <div id="work">
-			<div id="wire"></div>
-			<div id="fanos">
-				<div id="small-circle"></div>
-				<div id="half-circle"></div>
-				<div id="bottom-quppa">
-					<div id="line">
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-					</div>
-					<div id="top-triangle"></div>
-					<div id="box">
-						<div id="candel"></div>
-						<div id="col"></div>
-					</div>
-					<div id="final">
-						<div id="line"></div>
-						<div id="last-triangle"></div>
-					</div>
-				</div>
-			</div>
-			<div class="light" id="c1">
-				<div class="light">
-					<div class="light">
-						<div class="light">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-
-		<!-- Care Mode -->
-
-		<!-- <div class="home-text">
-			<h6>Geri Döneceğiz</h6>
-			<h1>Sitemiz Şu Anda Genel Bakımda</h1>
-			<p>115 Nisan'da Yeniden Uğramayı Unutmayın!  <br> <br> Ramazan Bayramına Özel Güncellememiz Geliyor!</p>
-			<div class="latter">
-				<form><p id="demo" class="input" style="background: none; border: 1px solid var(--main-color); border-radius: 50px; padding: 10px; cursor: no-drop;" align="center"></p>
-
-				</form>
-			</div>
-		</div>
-
-		<div id="work">
-			 <div id="wire"></div>
-			<div id="fanos">
-				<div id="small-circle"></div>
-				<div id="half-circle"></div>
-				<div id="bottom-quppa">
-					<div id="line">
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-						<span class="ball"></span>
-					</div>
-					<div id="top-triangle"></div>
-					<div id="box">
-						<div id="candel"></div>
-						<div id="col"></div>
-					</div>
-					<div id="final">
-						<div id="line"></div>
-						<div id="last-triangle"></div>
-					</div>
-				</div>
-			</div>
-			<div class="light" id="c1">
-				<div class="light">
-					<div class="light">
-						<div class="light">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Apr 14, 2023 22:00:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function () {
-
-				// Get today's date and time
-				var now = new Date().getTime();
-
-				// Find the distance between now and the count down date
-				var distance = countDownDate - now;
-
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				// Display the result in the element with id="demo"
-				document.getElementById("demo").innerHTML = "Geliştiriciler Bekleniyor...;
-
-				// If the count down is finished, write some text
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "Geliştiriciler Bekleniyor...";
-				}
-			}, 1000);
-		</script> -->
-
 
 	</section>
 
@@ -305,7 +185,7 @@
 						<h6>Yayında</h6>
 						<div class="main-btn">
 							<a href="https://cdn.discordapp.com/attachments/938001122109558824/1083056839912083476/Thunar_Dock.rar"
-								class="btn">İndir</a>
+								class="btn" id="down">İndir</a>
 						</div>
 					</div>
 				</div>
@@ -329,7 +209,7 @@
 		</div>
 	</section>
 
-	<!---start about section---->
+	<!-- start about section -->
 	<section class="about" id="about">
 
 		<div class="about-img">
@@ -353,7 +233,7 @@
 
 	</section>
 
-	<!---start contact section---->
+	<!-- Main Footer -->
 	<section class="contact" id="contact">
 		<footer class="footer-distributed">
 
@@ -417,6 +297,7 @@
 		</footer>
 	</section>
 
+	<!-- Floating Island Footer -->
 	 <!--
 
      <div class="last-text">
