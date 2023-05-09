@@ -1,0 +1,208 @@
+/* Staff Image Styling */
+
+.moderator {
+    border: 2px solid #A33129;
+}
+
+.administrator {
+    border: 2px solid #A33129;
+}
+
+.supervisor {
+    border: 2px solid #A33129;
+}
+
+.manager {
+    border: 2px solid #0c51b9;
+}
+
+.ceo {
+    border: 2px solid #000000;
+}
+
+.asena {
+    border: 2px solid #f600ff;
+}
+
+.beta{
+
+    border: 2px solid #7289da;
+
+}
+
+.community{
+
+    border: 2px solid #6a067e;
+
+}
+
+.friend{
+
+    border: 2px solid #e67e22;
+
+}
+
+.tag.is-moderator {
+    background-color: #A33129;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-administrator {
+    background-color: #A33129;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-manager {
+    background-color: #A33129;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-supervisor {
+    background-color: #A33129;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-manager {
+    background-color: #0c51b9;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-ceo {
+    background-color: #000000;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-asena {
+    background-color: #f600ff;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-beta {
+    background-color: #7289da;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-friend {
+    background-color: #e67e22;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-community {
+    background-color: #6a067e;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+/* Yas */
+
+/* .moderator {
+    border: 2px solid #696969;
+}
+
+.administrator {
+    border: 2px solid #696969;
+}
+
+.supervisor {
+    border: 2px solid #696969;
+}
+
+.manager {
+    border: 2px solid #696969;
+}
+
+.ceo {
+    border: 2px solid #696969;
+}
+
+.asena {
+    border: 2px solid #696969;
+}
+
+.beta{
+
+    border: 2px solid #696969;
+
+}
+
+.community{
+
+    border: 2px solid #696969;
+
+}
+
+.friend{
+
+    border: 2px solid #696969;
+
+}
+
+.tag.is-moderator {
+    background-color: #696969;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-administrator {
+    background-color: #696969;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-manager {
+    background-color: #696969;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-supervisor {
+    background-color: #696969;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-manager {
+    background-color: #696969;
+    text-shadow: #222222 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-ceo {
+    background-color: #696969;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-asena {
+    background-color: #696969;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-beta {
+    background-color: #696969;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-friend {
+    background-color: #696969;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+
+.tag.is-community {
+    background-color: #696969;
+    text-shadow: #021310 3px 3px 3px;
+    color: #fff;
+}
+*/
