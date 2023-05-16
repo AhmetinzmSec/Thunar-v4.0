@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thunar - Discord Güvenliğinde Yeni Çağ</title>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+    <!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/loginpage.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--Stylesheet-->
+
+</head>
+
+<body oncontextmenu="return false;">
+
+
+<section>
+
+
+    <div class="home">
+
+        <!---start header---->
+        <header>
+            <a href="#" class="logo">
+                <img src="img/ThunarLogoNoBG.png">
+            </a>
+
+            <ul class="navbar">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#categories">Özellikler</a></li>
+                <li><a href="#courses">Diğer Projeler</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
+                <!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
+            </ul>
+    
+            <div class="header-icons">
+                <a href="https://top.gg/tr/bot/963406060150984764" target="_blank"><i class='bx bx-heart'></i></a>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
+                    target="_blank"><i class='bx bx-plus'></i></a>
+                <a href="index.html" target="_blank"><i class='bx bx-home'></i></a>
+                <!--<a href="" target="_blank" class="ssshh"><i class='bx bx-user'></i></a>-->
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        
+
+        <div class="lg">
+
+            <div class="background">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <form class="login">
+                <h3>Giriş Yapın</h3>
+
+                <p id="alert" align="center"></p>
+    
+                <label for="">E-Posta</label>
+                <input type="email" placeholder="Mail Adresiniz" id="email" name="email">
+    
+                <label for="">Şifre</label>
+                <input type="password" placeholder="Şifreniz" id="password" name="password">
+    
+                <!-- <input type="submit" id="login" name="login" value="Gönder"> -->
+                <button type="button" id="giris" name="giris">Giriş Yap</button>
+                <button type="button" id="kayit" name="kayit">Kayıt Ol</button>
+            </form>
+    
+        </div>
+
+    </div>
+
+</section>
+
+    <!---custom js link---->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+
+
+    <!-- Firebase database  -->
+    <script type="module">
+        //fonksiyon,sdk,kütüphane
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBN6iNFW3cVk5d2DlLPMUQevVNO7Yfg6cY",
+            authDomain: "thunar-kapgan-7e314.firebaseapp.com",
+            projectId: "thunar-kapgan-7e314",
+            storageBucket: "thunar-kapgan-7e314.appspot.com",
+            messagingSenderId: "79408902528",
+            appId: "1:79408902528:web:a4784bfe8f36a811319165"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        //Eposta şifre ile hesap oluştur
+
+        document.getElementById("kayit").addEventListener("click", function () {
+            //değerleri al
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+           //kayıt
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // kayıt başarılı olduğunda yapılacak işlemler
+                    const user = userCredential.user;
+                    document.getElementById("alert").innerHTML="Kayıt Başarılı";
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    if (email==""){
+                        document.getElementById("alert").innerHTML="Lütfen Geçerli Bir E-Posta Adresi Girin";
+                    }
+                    else if(password==""){
+                        document.getElementById("alert").innerHTML="Lütfen  Geçerli Bir Parola Girin ";
+                    }
+
+                    else{
+                        document.getElementById("alert").innerHTML="Bu E-Posta Adresi Kullanılıyor";
+                    }
+
+                });
+        });
+
+        //eposta şife ile giriş yap
+
+
+        document.getElementById("giris").addEventListener("click", function () {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            // var username=document.getElementById("username").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    window.location.href = "/index.html";
+
+
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    if (email=="") {
+                        document.getElementById("alert").innerHTML="Lütfen Geçerli Bir E-Posta Adresi Girin";
+                    }
+                    else if(password==""){
+                        document.getElementById("alert").innerHTML="Lütfen Parolanızı Girin";
+                    }
+
+                    else{
+                        document.getElementById("alert").innerHTML="E-Postanız Veya Parolanız Hatalı";
+                    }
+                });
+        });
+
+    </script>
+
+    
+
+</body>
+
+</html>
