@@ -51,7 +51,6 @@
                 <li><a href="#courses">Diğer Projeler</a></li>
                 <li><a href="#about">Hakkında</a></li>
                 <li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
-                <li><a href="https://siberguvenlikexe.com">Siber Güvenlik EXE <span class="yakinda">BETA</span></a></li>
                 <!-- <li><a href="batty.html">Batty <span class="yakinda">YAKINDA</span></a></li> -->
             </ul>
     
@@ -75,6 +74,8 @@
             </div>
             <form class="login">
                 <h3>Giriş Yapın</h3>
+
+                <p id="alert" align="center"></p>
     
                 <label for="">E-Posta</label>
                 <input type="email" placeholder="Mail Adresiniz" id="email" name="email">
@@ -122,10 +123,6 @@
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
 
-
-
-
-
         //Eposta şifre ile hesap oluştur
 
         document.getElementById("kayit").addEventListener("click", function () {
@@ -138,7 +135,7 @@
                 .then((userCredential) => {
                     // kayıt başarılı olduğunda yapılacak işlemler
                     const user = userCredential.user;
-                    alert("Kayıt Başarılı");
+                    document.getElementById("alert").innerHTML="Kayıt Başarılı";
                     // ...
                 })
                 .catch((error) => {
@@ -146,14 +143,14 @@
                     const errorMessage = error.message;
                     // ..
                     if (email==""){
-                        alert("Lütfen Geçerli Bir E-Posta Adresi Girin");
+                        document.getElementById("alert").innerHTML="Lütfen Geçerli Bir E-Posta Adresi Girin";
                     }
                     else if(password==""){
-                        alert("Lütfen  Geçerli Bir Parola Girin ");
+                        document.getElementById("alert").innerHTML="Lütfen  Geçerli Bir Parola Girin ";
                     }
 
                     else{
-                        alert("Bu E-Posta Adresi Kullanılıyor");
+                        document.getElementById("alert").innerHTML="Bu E-Posta Adresi Kullanılıyor";
                     }
 
                 });
@@ -179,88 +176,21 @@
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     if (email=="") {
-                        alert("Lütfen Geçerli Bir E-Posta Adresi Girin");
+                        document.getElementById("alert").innerHTML="Lütfen Geçerli Bir E-Posta Adresi Girin";
                     }
                     else if(password==""){
-                        alert("Lütfen Parolanızı Girin");
+                        document.getElementById("alert").innerHTML="Lütfen Parolanızı Girin";
                     }
 
                     else{
-                        alert("E-Postanız Veya Parolanız Hatalı")
+                        document.getElementById("alert").innerHTML="E-Postanız Veya Parolanız Hatalı";
                     }
                 });
         });
 
     </script>
 
-    <!---start contact section---->
-	<section class="contact" id="contact">
-
-        
-
-		<footer class="footer-distributed">
-
-            <h5 align="center" class="mtxt">Henüz mobilden giriş desteklenmiyor. Ancak mobil uyumluluk üzerinde çalışıyoruz. Çok yakında kullanılabilir olacak</h5>
-
-			<div class="footer-left">
-	
-				<img src="img/ThunarLogoNoBG.png" alt="" width="200px">
-	
-				<p class="footer-company-name">Kapgan Federasyonu © 2022 - 2023</p>
-	
-				<p class="footer-links">
-					<a href="#" class="link-1">Ana Sayfa</a>
-					
-					<a href="#">Özellikler</a>
-				
-					<a href="#">Diğer Proje</a>
-				
-					<a href="#">Hakkında</a>
-					
-					<a href="#">Wiki</a>
-				
-				</p>
-			</div>
-	
-			<div class="footer-center">
-	
-				<div>
-					<i class="fa fa-globe"></i>
-					<p><span>Kapgan Federasyonu</span> <a href="https://kapganfederation.vercel.app">WEB Site</a></p>
-				</div>
-	
-				<div>
-					<i class="fa fa-globe"></i>
-					<p><span>Siber Güvenlik EXE</span> <a href="https://siberguvenlikexe.com">WEB Site</a></p>
-				</div>
-	
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:kapganfederation@proton.me">kapganfederation@proton.me</a></p>
-				</div>
-	
-			</div>
-	
-			<div class="footer-right">
-	
-				<p class="footer-company-about">
-					<span>Thunar'ı Kısaca Tanıyın</span>
-					Thunar, Discord sunucunuzda güvenlik çağını başlatan yeni nesil bir Discord bekçi botudur
-				</p>
-	
-				<div class="footer-icons">
-	
-					<a href="https://instagram.com/kapganfederation"><i class="fab fa-instagram"></i></a>
-					<a href="https://instagram.com/siber_guvenlik.exe"><i class="fab fa-instagram"></i></a>
-					<a href="https://instagram.com/ahmetinzmsec"><i class="fab fa-instagram"></i></a>
-					<a href="https://github.com/AhmetinzmSec"><i class="fab fa-github"></i></a>
-	
-				</div>
-	
-			</div>
-	
-		</footer>
-	</section>
+    
 
 </body>
 
