@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/loginpage.css">
 	<link rel="stylesheet" href="css/snowflake.css">
+	<link rel="stylesheet" href="css/confetti.css">
 	<link rel="stylesheet" href="css/snow.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -28,54 +29,6 @@
 </head>
 
 <body oncontextmenu="return false;">
-	<!-- <div class="snowing">
-		  <div class="small-snow">
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-			<div class="small"></div>
-		  </div>
-		  <div class="medium-snow">
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-			<div class="medium"></div>
-		  </div>
-		</div> -->
-
-	<!-- -start header- -->
 
 	<header>
 		<a href="#" class="logo">
@@ -83,23 +36,21 @@
 		</a>
 
 		<ul class="navbar">
-			<li><a href="#home">Ana Sayfa</a></li>
-			<li><a href="#categories">Özellikler</a></li>
-			<li><a href="#courses">Diğer Projeler</a></li>
-			<li><a href="#about">Hakkında</a></li>
-			<li><a href="bulletin.html">Bülten <span class="yakinda">BETA</span></a></li>
-			<li><a href="https://wiki-thunar.vercel.app">Wiki</a></li>
-			<li><a href="team.html">Ekip</a></li>
+			<li><a href="#home"><i class='bx bx-home'></i></a></li>
+			<li><a href="#categories"><i class='bx bx-cog'></i></a></li>
+			<li><a href="#about"><i class='bx bx-user'></i></a></li>
+			<li><a href="wiki.html"><i class='bx bx-globe'></i></a></li>
 		</ul>
 
 		<div class="header-icons">
-			<a href="" target="_blank" onclick="bg()"><i class='bx bx-heart'></i></a>
 			<a href="https://discord.com/api/oauth2/authorize?client_id=988089532970827787&scope=bot+applications.commands&permissions=1374891928950"
-				target="_blank"><i class='bx bx-plus'></i></a>
-			<a href="login.html" target="_blank"><i class='bx bx-user'></i></a><span class="yakinda">YENİ</span>
-			<!--<a href="" target="_blank" class="ssshh"><i class='bx bx-user'></i></a>-->
-			<div class="bx bx-menu" id="menu-icon"></div>
+				target="_blank"><i class='bx bxl-discord-alt'></i></a>
 		</div>
+
+		<!-- <a href="https://hackadia.vercel.app" class="logo2">
+			<img src="img/hackadia.png">
+		</a> -->
+
 	</header>
 
 	<!---start home section---->
@@ -133,6 +84,7 @@
 					<img src="img/cate1.png">
 					<h3>Çoklu Ortam</h3>
 					<p>Thunar Bir Çok Kişi Tarafından Çoklu Ortamda Geliştiriliyor</p>
+
 				</div>
 
 				<div class="box">
@@ -156,6 +108,35 @@
 		</div>
 	</section>
 
+	<a href="https://drive.google.com/file/d/1cR53sxR_17HDLHmzL7EBh6ipXaQfvCpR/view?usp=drive_link"><button id="button"
+			class="ready" onclick="clickButton();">
+
+			<div class="message submitMessage">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
+					<polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 " />
+					<line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3" />
+				</svg> <span class="button-text">Neuron'u İndir 🐧</span>
+			</div>
+
+			<div class="message loadingMessage">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+					<circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+					<circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+					<circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+				</svg>
+			</div>
+
+			<div class="message successMessage">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+					<polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+				</svg> <span class="button-text">Onaylandı</span>
+			</div>
+		</button>
+
+		<canvas id="canvas"></canvas>
+		<!-- partial -->
+		<script src="./menu.js"></script>
+	</a>
 	<!-- -start container section-- -->
 	<!-- <section class="container">
 		<div class="container-box">
@@ -201,7 +182,7 @@
 	</section> -->
 
 	<!---start course section---->
-	<section class="courses" id="courses">
+	<!-- <section class="courses" id="courses">
 		<div class="blur">
 			<div class="center-text">
 				<h5>Diğer Projeler</h5>
@@ -217,16 +198,14 @@
 						<h5>Masaüstü Programı</h5>
 						<h3>Thunar Rıhtım</h3>
 						<h6>Yayında</h6>
-						<div class="main-btn">
-							<a href="https://cdn.discordapp.com/attachments/938001122109558824/1083056839912083476/Thunar_Dock.rar"
-								class="btn" id="down">İndir</a>
-						</div>
+
 					</div>
+
 				</div>
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="cta">
@@ -269,38 +248,35 @@
 
 	<!-- Main Footer -->
 	<section class="contact" id="contact">
-		<footer class="footer-distributed">
+		<footer class="footer-distributed" style="margin-bottom: 40px;">
 
 			<div class="footer-left">
 
 				<img src="img/ThunarLogoNoBG.png" alt="" width="200px">
 
-				<p class="footer-company-name">Kapgan Federasyonu © 2022 - 2023</p>
-
-				<p class="footer-links">
-					<a href="#" class="link-1">Ana Sayfa</a>
-
-					<a href="#categories">Özellikler</a>
-
-					<a href="#courses">Diğer Projeler</a>
-
-					<a href="#about">Hakkında</a>
-
-					<a href="https://wiki-thunar.vercel.app/">Wiki</a>
-
-				</p>
+				<p class="footer-company-name">Hackadia Adı Altında Lisanlıdır © 2022 - 2023</p>
 			</div>
 
 			<div class="footer-center">
 
 				<div>
 					<i class="fa fa-globe"></i>
-					<p><span>Kapgan Federasyonu</span> <a href="https://kapganfederation.vercel.app">WEB Site</a></p>
+					<p><span>Hackadia</span> <a href="https://Hackadia.vercel.app">WEB Site</a></p>
+				</div>
+
+				<div>
+					<i class="fab fa-instagram"></i>
+					<p><a href="https://instagram.com/hackadia.inc">Hackadia.INC</a></p>
+				</div>
+
+				<div>
+					<i class="fab fa-twitter"></i>
+					<p><a href="https://twitter.com/hackadia">Hackadia</a></p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:kapganfederation@proton.me">kapganfederation@proton.me</a></p>
+					<p><a href="mailto:hackadia@gmail.com">hackadia@gmail.me</a></p>
 				</div>
 
 			</div>
@@ -314,7 +290,7 @@
 
 				<div class="footer-icons">
 
-					<a href="https://instagram.com/kapganfederation"><i class="fab fa-instagram"></i></a>
+					<a href="https://instagram.com/hackadia"><i class="fab fa-instagram"></i></a>
 					<a href="https://instagram.com/ahmetinzmsec"><i class="fab fa-instagram"></i></a>
 					<a href="https://github.com/AhmetinzmSec"><i class="fab fa-github"></i></a>
 
@@ -326,14 +302,11 @@
 	</section>
 
 	<!-- Floating Island Footer -->
-	<!--
 
-     <div class="last-text">
-		<p>© 2022 - 2023 <a href="https://kapganfederation.vercel.app">KAPGAN FEDERASYONU</a> ❤ <a
-				href="https://siberguvenlikexe.com">Siber Güvenlik EXE</a> TÜM HAKLARI SAKLIDIR</p>
-	</div>
 
-   -->
+	<!-- <div class="last-text">
+		<p>© 2022 - 2023 <a href="https://Hackadia.vercel.app">Hackadia</a> TÜM HAKLARI SAKLIDIR</p>
+	</div> -->
 
 	<!---custom js link---->
 
